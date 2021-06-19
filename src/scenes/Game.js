@@ -18,6 +18,8 @@ export default class Game extends Phaser.Scene {
       y: this.scale.height / 2
     }
 
+    this.add.image(400, 300, 'sky')
+
     this.player = this.physics.add.sprite(center.x, center.y, 'bunny1')
   }
 
